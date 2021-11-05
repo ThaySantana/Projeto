@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title> Homepage </title>
+	<link rel="stylesheet" th:href="@{css/home.css}">
+</head>
+
+<body>
+	<header>
+  		<nav>
+    			<ul>
+    				<li> <a th:href="@{/}"> Home </a> </li>
+              		<li> <a th:href="@{/esp22}"> Esperados de 2022 </a> </li>
+             		<li> <a th:href="@{/esp23}"> Esperados de 2023 </a> </li>
+             		<li> <a th:href="@{/equipe}"> Nossa equipe </a> </li>
+           			<li> <a th:href="@{/contato}"> Contato </a> </li>
+               	</ul>
+        </nav>
+  	</header>
+  	
+	<h2> Bem-vindo(a) ao <em>TechMovies</em> </h2>
+	<p>
+		Texto a desenvolver
+	</p>
+	
+	<h3> Sobre nós </h3>
+	<p>
+		Texto a desenvolver
+	</p>
+	
+	
+	<br>
+	<footer>
+		<figure class="colab">
+            <img width="150" height="70" src="./img/FATEC-RL.png" alt="Logo FATEC RL">
+            <img width="280" height="70" src="./img/CPS-GovSP.png" alt="Logo CPS e Governo">
+        </figure>
+        
+		<p>
+			Copyright © 2021 - Felipe, Leonardo, Thaylla
+		</p>
+	</footer>
+</body>
+</html>
