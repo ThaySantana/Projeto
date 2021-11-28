@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" th:href="@{css/styling.css}">
+	<title> Home </title>
+	
+	<link th:href=@{img/tech-movies.jpeg} rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body>
+<header>
+	<img th:src=@{img/tech-movies.jpeg} alt="Logo TechMovies" title="TechMovies" id="logo">
+	<nav>
+   		<ul>
+   			<li><a th:href="@{/}"> Home </a></li>
+   			<li><a th:href="@{/esperados22}"> Esperados de 2022 </a></li>
+   			<li><a th:href="@{/esperados23}"> Esperados de 2023 </a></li>
+   			<li><a th:href="@{/sugerirfilme}"> Sugerir filmes</a></li>
+   			<li><a th:href="@{/filmesugerido}"> Filmes sugeridos </a></li>
+       </ul>
+   </nav>
+</header><br>
+
+	<h1> Welcome to <em>TechMovies</em> </h1>
+	
+	<p class="caixa"> 
+		The TechMovies' objective is keeping everyone connected in what happens in the world of <em>seventh art</em>. We aim to 
+	bring the gigantic sections of what will come to cinemas in the future.
+	</p>
+	<br>
+	
+	<p class="caixa2">
+		If you want to suggest us a movie, click <a th:href="@{/sugerirfilme}"> here </a> and tell a little bit about it.
+	</p>
+	<br>
+	
+	
+	<br>
+	<footer>
+		<figure class="rodape">
+			<img width="150" height="70" th:src=@{img/CPS-GovSP.png} alt="Logo FATEC RL">
+			<img width="270" height="70" th:src=@{img/FATEC-RL.png} alt="Logo CPS e Governo">
+		</figure>
+		
+		<p>
+			Copyright © 2021 - Felipe, Leonardo, Thaylla
+		</p>
+	</footer>
+
+</body>
+</html>

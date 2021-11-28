@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" th:href=@{css/styling.css}>
+	<title> Sugestão </title>
+	
+	<link rel="shortcut icon" type="image/x-icon" th:href=@{img/tech-movies.jpeg}>
+</head>
+
+<body>
+	<header>
+	<img th:src=@{img/tech-movies.jpeg} alt="Logo TechMovies" title="TechMovies" id="logo">
+	<nav>
+   		<ul>
+    		<li> <a th:href="@{/}"> Home </a> </li>
+        	<li> <a th:href="@{/esperados22}"> Esperados de 2022 </a> </li>
+       		<li> <a th:href="@{/esperados23}"> Esperados de 2023 </a> </li>
+   			<li> <a th:href="@{/sugerirfilme}"> Sugerir filme </a> </li>
+   			<li> <a th:href="@{/filmesugerido}"> Filmes sugeridos </a> </li>
+       </ul>
+   </nav>
+</header><br>
+
+<div class="sugest">
+	<h1> Sugerir filme </h1>
+	<p> Assistiu um filme e quer nos indicar, basta mandar sua sugestão. </p>
+</div>
+
+    <form name="Sugestão" th:action="http://hub.fatecrl.edu.br/sobrino/recebe.php" method="post">
+            <fieldset class="campo">
+                <legend> Sugestão </legend>
+
+                <input type="text" th:field="*{nome}" placeholder="Título do filme">
+				<input type="text" th:field="*{sinopse}" placeholder="Sinopse do filme">
+
+                <br>
+                <input type="submit" Value="Enviar">
+            </fieldset>
+    </form><br>
+    
+    
+    <br>
+    <footer class="rodape">
+		<figure>
+			<img th:src=@{img/CPS-GovSP.png} alt="Logo FATEC RL">
+			<img th:src=@{img/FATEC-RL.png} alt="Logo CPS e Governo">
+		</figure>
+		
+		<p>
+			Copyright © 2021 - Felipe, Leonardo, Thaylla
+		</p>
+	</footer>
+</body>
+</html>

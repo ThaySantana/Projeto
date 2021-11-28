@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    list-style: none;
+    scroll-behavior: smooth;
+    background-color: #fff;
+    align-content: center;
+}
+
+header{
+    display: flex;
+    flex: 0 0 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    position: sticky;
+    z-index: 0;
+}
+
+#logo {
+    display: block;
+    padding: 8px 10px;
+    width: 150px;
+    border: none;
+    max-width: 200px;
+}
+
+.menu {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 15px 15px 10px 10px;
+}
+
+.menu li {
+    background-color: #ffa500;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.menu a{
+    display: flex;
+    padding: 15px 20px 15px 20px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.menu a:hover {
+    padding: 15px 20px 15px 20px;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    color: #000;
+    background-color: #d2691e;
+}
+
+p {
+	color: #000;
+	font-size: 18px;
+}
+
+h1, h2, h3, h4 {
+    color: #d2691e;
+}
+
+/* error */
+.error {
+	text-align: center;
+    margin: 0 auto;
+    margin: 50px 0;
+}
+
+.image-error, .image-success {
+	width: 25%;
+}
+
+.btn {
+	margin: 10px 0;
+}
+
+.btn-error {
+	border: 2px solid #000;
+    color: #bdbd00;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* form */
+.campo{
+    padding: 20px 0 20px 60px;
+    background-color: #ffefef; 
+    border-radius: 7px;
+    line-height: 24px;
+    margin: 20px;
+    border: 1px double #940303;
+    width: 70%;
+}
+
+form .campo>legend{
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #940303;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+form {
+    padding: 20px 50px;
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input[type="text"], textarea{
+    width: 100%;
+}
+
+input[type="submit"] {
+    border-radius: 5px;
+    width: 70px;
+    border: none;
+    color: #fff;
+    background-color: #000;
+}
+
+input[type="submit"]:hover {
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    background-color: #d2691e;
+}
+
+/*suggest*/
+.voltar {
+	border-radius: 5px;
+    width: 70px;
+    border: none;
+    color: #000;
+    background-color: #d2691e;
+}
+
+/*footer*/
+.rodape {
+	background-color: #fff;
+    bottom: 0;
+    width: auto;
+    font-size: 10px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}

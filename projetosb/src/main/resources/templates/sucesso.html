@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" th:href="@{css/styling.css}">
+	<title> Sucesso </title>
+	
+	<link rel="shortcut icon" type="image/x-icon" th:href=@{img/tech-movies.jpeg}>
+</head>
+
+<body>
+	<header>
+	<img th:src=@{img/tech-movies.jpeg} alt="Logo TechMovies" title="TechMovies" id="logo">
+	<nav>
+   		<ul>
+   			<li> <a th:href="@{/}"> Home </a></li>
+   			<li> <a th:href="@{/esperados22}"> Esperados de 2022 </a></li>
+   			<li> <a th:href="@{/esperados23}"> Esperados de 2023 </a></li>
+   			<li> <a th:href="@{/sugerirfilme}"> Sugerir filmes </a></li>
+   			<li> <a th:href="@{/filmesugerido}"> Filmes sugeridos </a></li>
+       </ul>
+   </nav>
+</header> <br>
+
+	<div>
+		<img th:src=@{img/success-icon.png} class="image-success" alt="Sucesso">
+		<h1> Your suggestion was successfully saved!! </h1> <br>
+		
+		<p>
+			Do you have more movies to suggest? Feel free to do it, just click on the button below or on menu. <br>
+			Click on <a> edit </a> if you want to change something.
+		</p>
+	</div>
+	
+	<div>
+		<button th:href="@{/sugerirfilme}" class="voltar"> Back </button>
+	</div>
+
+</body>
+</html>

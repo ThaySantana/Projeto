@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" th:href="@{css/styling.css}">
+	<title> Esperados de 2022 </title>
+	
+	<link rel="shotcut icon" type="image/x-icon" th:href="@{img/tech-movies.jpeg}">
+</head>
+
+<body>
+	<header>
+	<img th:src="@{img/tech-movies.jpeg}" alt="Logo TechMovies" title="TechMovies" id="logo">
+		<nav>
+			<ul>
+				<li><a th:href="@{/}"> Home </a></li>
+				<li><a th:href="@{/esperados22}"> Esperados de 2022 </a></li>
+				<li><a th:href="@{/esperados23}"> Esperados de 2023 </a></li>
+				<li> <a th:href="@{/sugerirfilme}"> Sugerir filme </a> </li>
+   				<li> <a th:href="@{/filmesugerido}"> Filmes sugeridos </a> </li>
+			</ul>
+		</nav>
+	</header><br>
+	
+	<h2> The most awaited movies to 2022 </h2><br>
+	
+	<p> 
+		If you're a Marvel fan, prepare yourself because there are incredible movies to come in the next years.
+    </p>
+      
+      
+      <table>
+      		<thead>
+      			<tr> 
+					<th> Title </th>
+					<th> Genre </th>
+					<th> Director </th>
+					<th> Synopsis </th>
+				</tr>
+			</thead>
+		
+			<tbody>
+      			<tr> 
+      				<td><a th:href="@{img/Scream.jpeg}"> Pânico </a></td>
+  					<td><a th:href="@{img/HalloweenEnds.jpeg}"> Halloween Ends </a></td>
+  					<td><a th:href="@{img/Uncharted.jpeg}"> Uncharted </a></td>
+  					<td><a th:href="@{img/DoctorStrange2.jpeg}"> Doutor Estranho no Multiverso da Loucura </a></td>
+  					<td><a th:href="@{img/BlackAdam.jpeg}"> Adão Negro </a></td>
+  					<td><a th:href="@{img/Spider-Verse.jpeg}"> Homem-Aranha no Aranhaverso 2 </a></td>
+  					<td><a th:href="@{img/BlackPanther.jpeg}"> Pantera Negra 2 </a></td>
+      			</tr>
+      		</tbody>
+      </table>
+</body>
+</html>

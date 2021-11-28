@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" th:href="@{css/styling.css}">
+	<title> Esperados de 2023 </title>
+	
+	<link rel="shotcut icon" type="image/x-icon" th:href="@{img/tech-movies.jpeg}">
+</head>
+
+<body>
+	<header>
+	<img th:src="@{img/tech-movies.jpeg}" alt="Logo TechMovies" title="TechMovies" id="logo">
+		<nav>
+			<ul>
+				<li><a th:href="@{/}"> Home </a></li>
+				<li><a th:href="@{/esperados22}"> Esperados de 2022 </a></li>
+				<li><a th:href="@{/esperados23}"> Esperados de 2023 </a></li>
+				<li> <a th:href="@{/sugerirfilme}"> Sugerir filme </a> </li>
+   				<li> <a th:href="@{/filmesugerido}"> Filmes sugeridos </a> </li>
+			</ul>
+		</nav>
+	</header><br>
+	
+	<h2> The most awaited movies to 2023 </h2><br>
+	
+	<p>
+		Many surprises are coming for 2023 too, huh - since musical remakes and live-action to new adventures and horror.
+	</p>
+	
+	<table>
+		<tr>
+			<th> Title </th>
+			<th> Genre </th>
+			<th> Director </th>
+			<th> Synopsis </th>
+		</tr>
+  		<tr>
+  			<td><a th:href="@{img/Wonka.jpeg}"> Wonka </a></td>
+  			<td><a th:href="@{img/LittleMermaid.jpeg}"> A Pequena Sereia </a></td>
+  			<td><a th:href="@{img/Dune2.jpeg}"> Duna 2 </a></td>
+  			<td><a th:href="@{img/Guardiões3.jpeg}"> Guardiões da Galáxia Vol. 3 </a></td>
+  			<td><a th:href="@{img/Shazam2.jpeg}"> Shazam 2: Fury of The Gods </a></td>
+  			<td><a th:href="@{img/Freira2.jpeg}"> A Freira 2 </a></td>
+  			<td><a th:href="@{img/Orfã2.jpeg}"> A Orfã 2 </a></td>
+  		</tr>
+  	</table><br>
+  	
+  	
+  	<br>
+	<footer>
+		<figure class="colab">
+            <img width="150" height="70" src="./img/FATEC-RL.png" alt="Logo FATEC RL">
+            <img width="280" height="70" src="./img/CPS-GovSP.png" alt="Logo CPS e Governo">
+        </figure>
+        
+		<p>
+			Copyright © 2021 - Felipe, Leonardo, Thaylla
+		</p>
+	</footer>
+	
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" th:href=@{css/styling.css}>
+	<title> Filmes Sugeridos </title>
+	
+	<link rel="shortcut icon" type="image/x-icon" th:href=@{img/tech-movies.jpeg}>
+</head>
+
+<body>
+	<header>
+	<img th:src=@{img/tech-movies.jpeg} alt="Logo TechMovies" title="TechMovies" id="logo">
+	<nav>
+   		<ul>
+    		<li> <a th:href="@{/}"> Home </a> </li>
+        	<li> <a th:href="@{/esperados22}"> Esperados de 2022 </a> </li>
+       		<li> <a th:href="@{/esperados23}"> Esperados de 2023 </a> </li>
+   			<li> <a th:href="@{/sugerirfilme}"> Sugerir filme </a> </li>
+   			<li> <a th:href="@{/filmesugerido}"> Filmes sugeridos </a> </li>
+       </ul>
+   </nav>
+</header><br>
+
+	<h1> Listas de filmes sugeridos</h1>
+	<a th:href=@{/filmesugerido}> ... </a>
+
+	<div class="formulario">
+		<form th:action="@{/sugerirfilme}" method="post" th:object="${}">
+			<input type="text" th:field="*{nome}" placeholder="Título do filme">
+			<input type="text" th:field="*{sinopse}" placeholder="Sinopse do filme">
+		</form>
+		
+		<div>
+			
+		</div>
+	</div>
+</body>
+</html>
